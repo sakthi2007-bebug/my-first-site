@@ -1,29 +1,69 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Sakthi Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background-color: #f4f4f4;
-    }
-    header {
-      background: #333;
+      font-family: Arial;
+      background: linear-gradient(to right, #667eea, #764ba2);
       color: white;
       text-align: center;
-      padding: 20px;
     }
-    section {
-      padding: 20px;
+
+    header {
+      padding: 30px;
     }
-    h2 {
-      color: #333;
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 10px;
     }
-    .box {
-      background: white;
-      padding: 15px;
+
+    h1 {
       margin: 10px 0;
-      border-radius: 10px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .box {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      margin: 15px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      background: white;
+      color: black;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: black;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      img {
+        width: 100px;
+      }
     }
   </style>
 </head>
@@ -32,31 +72,42 @@
 
 <header>
   <h1>Sakthi</h1>
-  <p>Computer Science Student</p>
+  <p>Computer Science Student 🚀</p>
+
+  <!-- Add your photo -->
+  <img src=""C:\Users\acer\Pictures\Camera Roll\WIN_20260309_22_57_28_Pro.jpg"" alt="My Photo">
+
+  <br>
+
+  <!-- Buttons -->
+  <button onclick="window.open('https://github.com')">GitHub</button>
+  <button onclick="window.open('https://linkedin.com')">LinkedIn</button>
 </header>
 
-<section>
-  <h2>About Me</h2>
+<div class="container">
+
   <div class="box">
-    <p>I am a student learning programming and web development.</p>
+    <h2>About Me</h2>
+    <p>I am learning programming, web development and cloud (AWS).</p>
   </div>
 
-  <h2>Skills</h2>
   <div class="box">
-    <p>C++, Java, HTML, AWS Basics</p>
+    <h2>Skills</h2>
+    <p>C++, Java, HTML, CSS, AWS Basics</p>
   </div>
 
-  <h2>Projects</h2>
   <div class="box">
-    <p>✔ My First Website</p>
+    <h2>Projects</h2>
+    <p>✔ Portfolio Website</p>
     <p>✔ AWS Practice</p>
   </div>
 
-  <h2>Contact</h2>
   <div class="box">
-    <p>Email: yourmail@gmail.com</p>
+    <h2>Contact</h2>
+    <p>Email: Sakthiraghavan2007@gmail.com</p>
   </div>
-</section>
+
+</div>
 
 </body>
 </html>
