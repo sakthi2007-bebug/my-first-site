@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sakthi Portfolio</title>
+  <title>Sakthi Sree Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: linear-gradient(to right, #667eea, #764ba2);
+      background: #0f172a;
       color: white;
-      text-align: center;
     }
 
     header {
-      padding: 30px;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(45deg, #3b82f6, #9333ea);
     }
 
     img {
-      width: 150px;
+      width: 140px;
       border-radius: 50%;
+      border: 4px solid white;
       margin-top: 10px;
     }
 
-    h1 {
-      margin: 10px 0;
+    h1 { margin: 10px; }
+
+    .section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .container {
+    .card {
+      background: #1e293b;
       padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      transition: 0.3s;
     }
 
-    .box {
-      background: rgba(255,255,255,0.1);
-      padding: 15px;
-      margin: 15px;
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s;
-    }
-
-    .box:hover {
-      transform: scale(1.05);
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
     }
 
     button {
       padding: 10px 20px;
       margin: 10px;
+      border-radius: 25px;
       border: none;
-      border-radius: 20px;
+      background: #22c55e;
+      color: white;
       cursor: pointer;
-      background: white;
-      color: black;
-      font-weight: bold;
     }
 
     button:hover {
-      background: black;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      img {
-        width: 100px;
-      }
+      background: #16a34a;
     }
   </style>
 </head>
@@ -71,40 +65,67 @@
 <body>
 
 <header>
-  <h1>Sakthi</h1>
-  <p>Computer Science Student 🚀</p>
+  <h1>Sakthi Sree</h1>
+  <p>BCA Student | Future Developer 🚀</p>
 
-  <!-- Add your photo -->
-  <img src=""C:\Users\acer\Pictures\Camera Roll\WIN_20260309_22_57_28_Pro.jpg"" alt="My Photo">
+  <!-- Replace with your photo -->
+  <img src="YOUR-IMAGE-LINK">
 
   <br>
 
-  <!-- Buttons -->
   <button onclick="window.open('https://github.com')">GitHub</button>
   <button onclick="window.open('https://linkedin.com')">LinkedIn</button>
 </header>
 
-<div class="container">
+<div class="section">
 
-  <div class="box">
-    <h2>About Me</h2>
-    <p>I am learning programming, web development and cloud (AWS).</p>
+  <div class="card">
+    <h2>Career Objective</h2>
+    <p>I like to learn new skills and use them for my future. I am a quick learner.</p>
   </div>
 
-  <div class="box">
+  <div class="card">
+    <h2>Education</h2>
+    <p><b>BCA (Computer Applications)</b></p>
+    <p>Avichi College of Arts and Science (2024 - 2027)</p>
+  </div>
+
+  <div class="card">
+    <h2>Work Experience</h2>
+    <p><b>Sales Person</b> - Max, Chennai (Jan 2026 - Mar 2026)</p>
+    <p><b>System Operator</b> - TANMED Pharma (Apr 2025 - Jun 2025)</p>
+    <p>Worked on data entry for inwards and outwards.</p>
+  </div>
+
+  <div class="card">
     <h2>Skills</h2>
-    <p>C++, Java, HTML, CSS, AWS Basics</p>
+    <p>Canva, MS Excel, MS Office, PowerPoint</p>
+    <p>Python, Java, Swing, C++</p>
+    <p>Poster Design, Computer Skills</p>
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Projects</h2>
-    <p>✔ Portfolio Website</p>
-    <p>✔ AWS Practice</p>
+    <p>✔ Snake Game (Python)</p>
+    <p>✔ Canva Designs for Client</p>
   </div>
 
-  <div class="box">
+  <div class="card">
+    <h2>Certifications</h2>
+    <p>MS Office & Tally ERP 9 (Apollo Education, 2024)</p>
+  </div>
+
+  <div class="card">
+    <h2>Achievements</h2>
+    <p>🏆 1st place in Maths Competition (College)</p>
+    <p>🏸 State-level Ball Badminton Player</p>
+  </div>
+
+  <div class="card">
     <h2>Contact</h2>
-    <p>Email: Sakthiraghavan2007@gmail.com</p>
+    <p>Email: sakthiraghavan2007@gmail.com</p>
+    <p>Phone: +91 9677147450</p>
+    <p>Location: Chennai</p>
   </div>
 
 </div>
