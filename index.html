@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sakthi Sree Portfolio</title>
+  <title>Sakthi Sree.R | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: white;
     }
 
     header {
       text-align: center;
-      padding: 40px;
-      background: linear-gradient(45deg, #3b82f6, #9333ea);
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 10px 0;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
     }
 
     img {
-      width: 140px;
+      width: 150px;
       border-radius: 50%;
       border: 4px solid white;
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
-    h1 { margin: 10px; }
-
-    .section {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 12px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      background: #334155;
-    }
-
-    button {
+    .buttons button {
       padding: 10px 20px;
       margin: 10px;
       border-radius: 25px;
@@ -54,10 +43,53 @@
       background: #22c55e;
       color: white;
       cursor: pointer;
+      font-weight: bold;
     }
 
-    button:hover {
+    .buttons button:hover {
       background: #16a34a;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background: #334155;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -66,69 +98,83 @@
 
 <header>
   <h1>Sakthi Sree</h1>
-  <p>BCA Student | Future Developer 🚀</p>
+  <p>BCA Student | Developer | Designer 🚀</p>
 
-  <!-- Replace with your photo -->
+  <!-- ADD YOUR PHOTO -->
   <img src="YOUR-IMAGE-LINK">
 
-  <br>
-
-  <button onclick="window.open('https://github.com')">GitHub</button>
-  <button onclick="window.open('https://linkedin.com')">LinkedIn</button>
+  <div class="buttons">
+    <button onclick="window.open('sakthi2007-bebug')">GitHub</button>
+    <button onclick="window.open('https://linkedin.com')">LinkedIn</button>
+    <button onclick="window.open('SakthiSree_InternshalaResume.pdf
+')">Download Resume</button>
+  </div>
 </header>
 
 <div class="section">
+  <h2>About Me</h2>
+  <p>I am a passionate Computer Science student who loves learning new technologies and building projects. I am a quick learner and always ready to improve my skills.</p>
+</div>
 
-  <div class="card">
-    <h2>Career Objective</h2>
-    <p>I like to learn new skills and use them for my future. I am a quick learner.</p>
+<div class="section">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">C++ Programming</div>
+    <div class="card">Java & Swing</div>
+    <div class="card">Python</div>
+    <div class="card">HTML & CSS</div>
+    <div class="card">AWS Basics</div>
+    <div class="card">Canva Design</div>
   </div>
+</div>
 
-  <div class="card">
-    <h2>Education</h2>
-    <p><b>BCA (Computer Applications)</b></p>
-    <p>Avichi College of Arts and Science (2024 - 2027)</p>
+<div class="section">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card project">
+      <h3>Snake Game</h3>
+      <p>Developed using Python inspired by Nokia game.</p>
+      <!-- Add project image if you have -->
+      <img src="https://via.placeholder.com/300">
+    </div>
+
+    <div class="card project">
+      <h3>Canva Designs</h3>
+      <p>Created posters and templates for client.</p>
+      <img src="https://via.placeholder.com/300">
+    </div>
+
   </div>
+</div>
 
+<div class="section">
+  <h2>Experience</h2>
   <div class="card">
-    <h2>Work Experience</h2>
-    <p><b>Sales Person</b> - Max, Chennai (Jan 2026 - Mar 2026)</p>
-    <p><b>System Operator</b> - TANMED Pharma (Apr 2025 - Jun 2025)</p>
-    <p>Worked on data entry for inwards and outwards.</p>
+    <p><b>Sales Person</b> - Max (2026)</p>
+    <p><b>System Operator</b> - TANMED Pharma (2025)</p>
   </div>
+</div>
 
+<div class="section">
+  <h2>Achievements</h2>
   <div class="card">
-    <h2>Skills</h2>
-    <p>Canva, MS Excel, MS Office, PowerPoint</p>
-    <p>Python, Java, Swing, C++</p>
-    <p>Poster Design, Computer Skills</p>
-  </div>
-
-  <div class="card">
-    <h2>Projects</h2>
-    <p>✔ Snake Game (Python)</p>
-    <p>✔ Canva Designs for Client</p>
-  </div>
-
-  <div class="card">
-    <h2>Certifications</h2>
-    <p>MS Office & Tally ERP 9 (Apollo Education, 2024)</p>
-  </div>
-
-  <div class="card">
-    <h2>Achievements</h2>
-    <p>🏆 1st place in Maths Competition (College)</p>
+    <p>🏆 First place in Maths Competition</p>
     <p>🏸 State-level Ball Badminton Player</p>
   </div>
+</div>
 
+<div class="section">
+  <h2>Contact</h2>
   <div class="card">
-    <h2>Contact</h2>
     <p>Email: sakthiraghavan2007@gmail.com</p>
     <p>Phone: +91 9677147450</p>
-    <p>Location: Chennai</p>
   </div>
-
 </div>
+
+<footer>
+  <p>© 2026 Sakthi Sree | Portfolio</p>
+</footer>
 
 </body>
 </html>
